@@ -11,9 +11,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "RoundedUp"
 title_separator          : "-"
-name                     : &name "RoundedUp"
-description              : &description "I have no idea"
-url                      : https://roundedup.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "RoundedUp"
+description              : "I have no idea"
+url                      : "https://roundedup.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "roundedup/roundedup.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -79,13 +79,13 @@ social:
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-103159563-1
+    tracking_id          : "UA-103159563-1"
 
 
 # Site Author
 author:
   name             : "RoundedUp"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "Physicist adventuring into data science"
   location         : "New York, NY"
   email            :
