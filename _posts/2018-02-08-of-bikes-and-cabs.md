@@ -52,7 +52,7 @@ Log-normal [Wikipedia entry](https://en.wikipedia.org/wiki/Log-normal_distributi
 
 ## Video 
 
-<iframe src="https://roundedup.github.io/assets/videos/bikecabs/fin.mp4” width="320" height="200" controls preload></iframe>
+<iframe src="https://roundedup.github.io/assets/videos/bikecabs/fin.mp4” width="320" height="200" frameloader="0"></iframe>
 
 
 
