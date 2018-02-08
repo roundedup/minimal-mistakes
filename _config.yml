@@ -84,7 +84,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "RoundedUp"
+  name             : #"RoundedUp"
   avatar           : "/images/profile.jpg"
   bio              : "Physicist adventuring into data science"
   location         : "New York, NY"
