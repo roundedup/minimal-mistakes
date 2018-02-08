@@ -1,7 +1,7 @@
 ---
 title: “Of Bikes and Cabs“
 categories:
-  - Data Lens
+  - EDA
   - NYC
 #tags:
 #  - nyc
@@ -39,6 +39,11 @@ Log-normal [Wikipedia entry](https://en.wikipedia.org/wiki/Log-normal_distributi
 
 <img src="https://roundedup.github.io/assets/images/bikecabs/taxi_year.png" alt="">
 <img src="https://roundedup.github.io/assets/images/bikecabs/bike_year.png" alt="">
+
+
+## Video 
+
+<video src="https://roundedup.github.io/assets/videos/bikecabs/fin.mov” width="320" height="200" controls preload></video>
 
 
 
