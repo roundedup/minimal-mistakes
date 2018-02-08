@@ -51,11 +51,11 @@ Log-normal [Wikipedia entry](https://en.wikipedia.org/wiki/Log-normal_distributi
 <img src="https://roundedup.github.io/assets/images/bikecabs/bike_year.png" alt="">
 
 
-## Video 
+## Video
 
 Bla
 
-<video width="540"  controls="controls">
+<video width="360"  controls="controls">
   <source src="https://roundedup.github.io/assets/videos/bikecabs/fin.mp4" type="video/mp4">
 </video>
 
@@ -64,4 +64,4 @@ VBla
 
 ## GitHub Repo
 
-Code on my GitHub [repo](https://github.com/roundedup) 
+Code on my GitHub [repo](https://github.com/roundedup)
