@@ -1,4 +1,5 @@
 ---
+layout: single
 title: Of Bikes and Cabs
 categories:
   - EDA
@@ -52,9 +53,11 @@ Log-normal [Wikipedia entry](https://en.wikipedia.org/wiki/Log-normal_distributi
 
 ## Video 
 
+Bla
+
 <iframe width="560" height="315" src="https://roundedup.github.io/assets/videos/bikecabs/fin.mp4” frameborder="0"></iframe>
 
-
+VBla
 
 ## GitHub Repo
 
