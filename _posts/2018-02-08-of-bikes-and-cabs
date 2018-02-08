@@ -1,0 +1,47 @@
+---
+title: “Of Bikes and Cabs“
+categories:
+  - Data Lens
+  - NYC
+#tags:
+#  - nyc
+#  - bikes
+#  - citibikes
+#  - taxi
+---
+
+Blabla
+
+## Data
+
+[Burp](https://www.asda) fy [repo](https://github.com/roundedup/xxx).
+
+
+<img src="https://roundedup.github.io/assets/images/bikecabs/scatter.png" alt="">
+
+## EDA
+
+
+<img src="https://roundedup.github.io/assets/images/bikecabs/speed.png" alt="">
+
+<img src="https://roundedup.github.io/assets/images/bikecabs/lognormal.png" alt="">
+
+## Weekly
+
+
+<img src="https://roundedup.github.io/assets/images/bikecabs/speed.png" alt="">
+<img src="https://roundedup.github.io/assets/images/bikecabs/usage.png" alt="">
+<img src="https://roundedup.github.io/assets/images/bikecabs/duration.png" alt="">
+
+Log-normal [Wikipedia entry](https://en.wikipedia.org/wiki/Log-normal_distribution#Occurrence_and_applications).
+
+## Semester
+
+<img src="https://roundedup.github.io/assets/images/bikecabs/taxi_year.png" alt="">
+<img src="https://roundedup.github.io/assets/images/bikecabs/bike_year.png" alt="">
+
+
+
+## GitHub Repo
+
+Code on my GitHub [repo](https://github.com/roundedup) 
