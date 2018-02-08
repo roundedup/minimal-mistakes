@@ -21,7 +21,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [Burp](https://www.asda) fy [repo](https://github.com/roundedup/xxx).
 
 
-<img src="https://roundedup.github.io/assets/images/bikecabs/scatter.jpg" alt="">
+<img width="240"  src="https://roundedup.github.io/assets/images/bikecabs/scatter.jpg" alt="">
 
 ## EDA
 
@@ -55,7 +55,7 @@ Log-normal [Wikipedia entry](https://en.wikipedia.org/wiki/Log-normal_distributi
 
 Bla
 
-<video width="360"  controls="controls">
+<video width="240"  controls="controls">
   <source src="https://roundedup.github.io/assets/videos/bikecabs/fin.mp4" type="video/mp4">
 </video>
 
