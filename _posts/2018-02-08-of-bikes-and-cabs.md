@@ -1,5 +1,5 @@
 ---
-title: “Of Bikes and Cabs“
+title: Of Bikes and Cabs
 categories:
   - EDA
   - NYC
