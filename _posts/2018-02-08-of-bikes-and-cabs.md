@@ -21,7 +21,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [Burp](https://www.asda) fy [repo](https://github.com/roundedup/xxx).
 
 
-<img src="https://roundedup.github.io/assets/images/bikecabs/scatter.png" alt="">
+<img src="https://roundedup.github.io/assets/images/bikecabs/scatter.jpg" alt="">
 
 ## EDA
 
