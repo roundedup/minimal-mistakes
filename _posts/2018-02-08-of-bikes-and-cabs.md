@@ -43,7 +43,7 @@ Log-normal [Wikipedia entry](https://en.wikipedia.org/wiki/Log-normal_distributi
 
 ## Video 
 
-<video src="https://roundedup.github.io/assets/videos/bikecabs/fin.mov” width="320" height="200" controls preload></video>
+<video src="https://roundedup.github.io/assets/videos/bikecabs/fin.mov” width="320" height="200" controls preload>
 
 
 
