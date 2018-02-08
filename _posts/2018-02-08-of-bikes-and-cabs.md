@@ -28,7 +28,7 @@ Blabla
 
 ## Weekly
 
-
+asda
 <img src="https://roundedup.github.io/assets/images/bikecabs/speed.png" alt="">
 <img src="https://roundedup.github.io/assets/images/bikecabs/usage.png" alt="">
 <img src="https://roundedup.github.io/assets/images/bikecabs/duration.png" alt="">
