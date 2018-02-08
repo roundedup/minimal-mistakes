@@ -55,11 +55,10 @@ Log-normal [Wikipedia entry](https://en.wikipedia.org/wiki/Log-normal_distributi
 
 Bla
 
-<video width="480" height="320" controls="controls">
+<video width="680"  controls="controls">
   <source src="https://roundedup.github.io/assets/videos/bikecabs/fin.mp4" type="video/mp4">
 </video>
 
-<iframe markdown="0" width="560" height="315" src="https://www.youtube.com/embed/v=XrTDwpLECtA” frameborder="0"></iframe>
 
 VBla
 
