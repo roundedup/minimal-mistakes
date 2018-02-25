@@ -17,6 +17,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <iframe width="860"  frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~roundedup/1.embed?width=640&height=480"></iframe>
 
 
+Now I try a table
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+
 
 ## GitHub Repo
 
