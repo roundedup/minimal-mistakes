@@ -14,43 +14,40 @@ categories:
 
 Can riding a bike in NYC be faster than getting a cab?
 
-Here I am trying to answer this and other questions in my first blog post. It is mostly based on some musing I had while
-participating to a [Kaggle challenge](https://www.asda) on taxi rides in New York City. 
+Here I am trying to answer this and other questions. This first blog post is mostly based on some musings I had while
+participating to a [Kaggle challenge on taxi trips](https://www.kaggle.com/c/nyc-taxi-trip-duration) in New York City. 
 I decided to take a look at correlations between the taxi rides dataset and the one available
-on [citibike trips](https://www.asda). Citibike is a bike sharing service with ~500 stations spread all over the city
-mainly in Manhattan and Brooklyn. I briefly cleaned the latter dataset, for instance matching the time window with the 
-taxi one to the first half of 2016, and published it on [Kaggle](https://www.asda).
+on [Citi Bike trips](https://www.citibikenyc.com/system-data). Citi bike is a bike sharing service with ~500 stations spread all over the city,
+mainly in Manhattan and Brooklyn.
 
 
-## Data
+## Data Overview
 
-The two dataset contain respectively n and m rides, spread throughout the first six months of 2016.
-The both contain starting and arrival points and times, duration of the trip plus a number of other 
-information we are less interested about (e.g. biker ID).
-To give an idea of the spacial distribution here is a map of the taxi pick-up locations and bike stations 
-(I cut cab rides to airports).
+The two dataset contain respectively 1.5 and 4.5 milion rides, that took place during the first six months of 2016.
+Each ride is characterized by starting and arrival points, respective times, and a number of other 
+information we are less interested in (e.g. biker or taxi ID).
+To give an idea of the spacial distribution here is a map of the Citi Bike stations and a subset of the taxi pick-up locations.
+I did not include cab rides to and from airports and in general I cleaned the datasets from outliers and other spurious entries.
 
-[Burp](https://www.asda) fy [repo](https://github.com/roundedup/xxx).
-
-
-<img width="320"  src="https://roundedup.github.io/assets/images/bikecabs/scatter.jpg" alt="">
+<img width="360"  src="https://roundedup.github.io/assets/images/bikecabs/scatter.jpg" alt="">
 
 ## Weekly
 
 We are ready to answer the initial question. What is faster?
 To simulate the grid structure of most parts of the city I computed a L1 distance traveled for each trip, 
-and subsequently computed the average speed. The big assumption is that bikes are going from station to station
-without stopping, I think it is a fair assumption given how citibike works, and especially during weekdays.
-Here is the result averaged over all the weeks in the dataset.
-There is a bit effect of traffic in cabs and bikes can indeed be faster. The bands correspond to
-So if you are a slightly above average biker and there is some traffic, better ride that bike!
+and subsequently computed the average velocity. The big assumption is that bikes are going from station to station
+without stopping, I think it is a fair assumption especially during weekdays and given how Citi Bike works.
+Here is the result averaged over all the weeks in the dataset. The bands correspond to 68% interval.
 
 <img src="https://roundedup.github.io/assets/images/bikecabs/speed.png" alt="">
 
 <img src="https://roundedup.github.io/assets/images/bikecabs/lognormal.png" alt="">
 
+The effect of traffic is clear on the cabs, interestingly also bikers go faster at night (skipping some red light?).
+So if you are a slightly above average biker and there is some traffic, better ride that bike!
+
 As a side node the distribution of taxi's velocities beautifully follows a [log normal distribution](https://en.wikipedia.org/wiki/Log-normal_distribution#Occurrence_and_applications), 
-while bikes are closer to a normal distribution with some big tail, probably dominated by long leisure trips.
+while bikes are closer to a normal distribution with some big tail, probably dominated by leisure trips.
 
 
 We can also just look at the overall weekly usage and duration of trips. Not surprisingly people like to take longer
@@ -61,6 +58,12 @@ bike trips on weekends, more surprisingly there are a lot of commuters who enjoy
 
 
 ## Semester
+What happens when we look at seasonal effects?
+As a quick overview we can look at a color map of usage per hour of the day for each day in the dataset. The following plots 
+illustrate again what seen above but they also reveal how weather has a clear impact on bikes
+ (warmer and better weather corresponds to more rides). 
+Fun fact the white line early in the year is not an artifact. It corresponds to the blizzard of January 23-24.
+
 
 <img src="https://roundedup.github.io/assets/images/bikecabs/taxi_year.png" alt="">
 <img src="https://roundedup.github.io/assets/images/bikecabs/bike_year.png" alt="">
@@ -69,8 +72,9 @@ bike trips on weekends, more surprisingly there are a lot of commuters who enjoy
 ## Video
 
 Finally I had a bit of fun trying to produce a video to show the distribution in time and space of bike rides.
-How do you like it? basically I produced many (countless) plots and then put them together 
-with a time lapse software. The code is very rudimentary, you can find it with the rest of the code used for this post on my on my GitHub 
+How do you like it? Basically for each trip I assume a straight trajectory and constant speed, given a time I compute the hypothetical 
+position of each bike riding at that time. I produced many (countless) plots and then put them together 
+with a time lapse software. You can find the code I used to produce the frames with the rest of the code used for this post on my on my GitHub 
 [repo](https://github.com/roundedup)
   
 
