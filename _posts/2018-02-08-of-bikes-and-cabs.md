@@ -75,7 +75,7 @@ Finally I had a bit of fun trying to produce a video to show the distribution in
 How do you like it? Basically for each trip I assume a straight trajectory and constant speed, given a time I compute the hypothetical 
 position of each bike riding at that time. I produced many (countless) plots and then put them together 
 with a time lapse software. You can find the code I used to produce the frames with the rest of the code used for this post on my on my GitHub 
-[repo](https://github.com/roundedup)
+[repo](https://github.com/roundedup), you will find some more plots and some other experiments with the data.
   
 
 <video width="320"  controls="controls">
