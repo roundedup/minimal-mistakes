@@ -12,7 +12,7 @@ categories:
 ---
 
 
-Can riding a bike in NYC be faster than getting a cab?
+Can a bike in NYC be faster than a cab?
 
 Here I am trying to answer this and other questions. This first blog post is mostly based on some musings I had while
 participating to a [Kaggle challenge on taxi trips](https://www.kaggle.com/c/nyc-taxi-trip-duration) in New York City. 
