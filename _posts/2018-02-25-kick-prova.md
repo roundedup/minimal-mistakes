@@ -34,7 +34,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Now I try a table
 
 Category  | tf-idf | features | all
------- | --- | --- | ---
+---- | -- | -- | --
 Art | 0.61 | 0.66 | 0.69
 Comics | 0.85 | 0.86 | 0.88
 Crafts | 0.55 | 0.69 | 0.73
@@ -50,7 +50,7 @@ Photography | 0.66 | 0.79 | 0.82
 Publishing | 0.81 | 0.84 | 0.85
 Technology | 0.47 | 0.57 | 0.61
 Theater | 0.84 | 0.85 | 0.87
------- | --- | --- | ---
+---- | -- | -- | --
 All | 0.74 | 0.79 | 0.81
 
 Now this
