@@ -31,10 +31,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
-Now I try a table
+Now I try a table v2
 
 Category    |tf-idf|feat. |all
-------- | :---: | :---: | :---:
+-----       | :---: | :---: | :---:
 Art         | 0.61 | 0.66 | 0.69
 Comics      | 0.85 | 0.86 | 0.88
 Crafts      | 0.55 | 0.69 | 0.73
