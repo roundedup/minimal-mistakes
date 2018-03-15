@@ -1,5 +1,4 @@
 ---
-layout: single
 title: Of Bikes and Cabs
 categories:
   - EDA
