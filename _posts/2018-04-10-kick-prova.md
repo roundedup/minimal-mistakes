@@ -10,8 +10,10 @@ categories:
 #  - taxi
 ---
 
-Blabla
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+If you want to run a crowdfunding campaign pitching your idea is important. 
+Choose your words your words carefully, choose your funding goal carefully. 
+It all matters as we shall see.
+
 
 
 <figure class="half">
@@ -32,9 +34,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </figure>
 
 
-<figure class="half">
-    <img width="160" src="/assets/images/kickstarter/tfidf_film.png">
-    <img width="160" src="/assets/images/kickstarter/tfidf_tech.png">
+<figure>
+    <img src="/assets/images/kickstarter/tfidf.png">
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
 
