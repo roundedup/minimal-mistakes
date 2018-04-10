@@ -15,26 +15,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 <figure class="half">
-    <img width="160" src="/assets/images/kickstater/cat_donut.png">
+    <img width="160" src="/assets/images/kickstarter/cat_donut.png">
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
 
 
 
 <figure class="half">
-    <img width="160" src="/assets/images/kickstater/scatter_goal.png">
+    <img width="160" src="/assets/images/kickstarter/scatter_goal.png">
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
 
 <figure class="half">
-    <img width="160" src="/assets/images/kickstater/funded_ratio.png">
+    <img width="160" src="/assets/images/kickstarter/funded_ratio.png">
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
 
 
 <figure class="half">
-    <img width="160" src="/assets/images/kickstater/tfidf_film.png">
-    <img width="160" src="/assets/images/kickstater/tfidf_tech.png">
+    <img width="160" src="/assets/images/kickstarter/tfidf_film.png">
+    <img width="160" src="/assets/images/kickstarter/tfidf_tech.png">
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
 
