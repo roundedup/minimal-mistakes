@@ -31,8 +31,8 @@ The dataset required minimal cleaning, after removing some outlier I just restri
 Let's start by talking about money, goals range from less than a hundred USD to hundreds of thousand. Success can be dramatic, few projects 
 obtain funds up to tenfold the set goal.
 
-<figure class="half">
-    <img width="160" src="/assets/images/kickstarter/scatter_goal.png">
+<figure>
+    <img width="160" src="/assets/images/kickstarter/scatter_goal.png" style="width: 500px;">
     <figcaption>Required goal (in USD) vs ratio of collected funding over goal. 
     Blue and red correspond to whether a project has been successfull or not.</figcaption>
 </figure>
@@ -46,11 +46,6 @@ in that category.
 
 <figure class="half">
     <img width="160" src="/assets/images/kickstarter/cat_donut.png">
-    <figcaption>Caption describing these two images.</figcaption>
-</figure>
-
-
-<figure class="half">
     <img width="160" src="/assets/images/kickstarter/funded_ratio.png">
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
