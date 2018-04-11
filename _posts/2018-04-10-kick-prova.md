@@ -80,12 +80,12 @@ thus big error bars should be associated with their success percentage. However 
 Back to the opening question, can we predict the success of a campaign?
 Encouraged by the tf-idf results I wanted probe the power of title and blurb words. 
 Indeed tf-idf already provides us with a vector representation of each campaign ..., which can 
-be readily used to train a Boosted Decision Tree. In this case I used the [XGBoost]() ....
+be readily used to train a Boosted Decision Tree. In this case I used the [XGBoost](http://xgboost.readthedocs.io/en/latest/) ....
 I wanted to compare the perfomance of it with other features extracted from the data, for instance:
-goal, length of campaign and start day (in the year), length of title and blurb, subcategory, US state, and so on.
-I trained separately on the tf-idf and on the features, category by category, after optimizing the hyperparameters with a grid search.
-Finally I trained one more model using both at the same time.  
-The results are below, where I show the f-1 score obtained on the test (20% of the campaigns in the dataset).
+goal, length of campaign and start day (in the year), number of characters in title and blurb, subcategory, US state, and so on.
+I trained using k-fold validation (with 6 folds) category by category, after optimizing the hyperparameters with a grid search.
+As an input I trained separately on the tf-idf and on the features, and on both together.
+The results in term of [f-1 score](https://en.wikipedia.org/wiki/F1_score) are reported in the table below.
 
 In most categories language is as powerful as the other features. Their combination improves the overall score by a few percents.
 Most surprising is the power of this simple method, getting up to f1-score ~0.9. 
