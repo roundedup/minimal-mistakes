@@ -28,15 +28,15 @@ To answer this question I used the dataset made available [here](https://webrobo
 It contains more the data from 100k campaigns, including goal and amount of funding collected by the deadline.
 
 The dataset required minimal cleaning, after removing some outlier I just restricted the location to be within the US for homogeneity.
-Let's start by talking about money, goals range from less than a hundred USD to hundreds of thousand. Success can be dramatic, few projects 
-obtain funds up to tenfold the set goal.
+Let's start by talking about money, goals range from less than a hundred USD to almost a hundred million. Success can be dramatic, with campaigns 
+reaching tens or hundreds time their initial pledge.
 
 <figure>
     <img width="160" src="/assets/images/kickstarter/scatter_goal.png" style="width: 500px;">
     <figcaption>Required goal (in USD) vs ratio of collected funding over goal. 
     Blue and red correspond to whether a project has been successfull or not.</figcaption>
 </figure>
-A few other trends are visible in the plot below. The most expensive campaigns are rarely funded. 
+A few other trends are visible in the plot below (I cut the high ratio tail). The most expensive campaigns are rarely funded. 
 There is a threshold effect such that a there are few campaigns failing by a small amount 
 (psychological effect in funders? Friends and family of the creator chipping in?).
 
@@ -61,19 +61,30 @@ thus big error bars should be associated with their success percentage. However 
 
 ## Choose your words carefully
 
+Let us turn our attention to the title and short description, a sort of pitch, of each campaign. 
+  we can use [tf-idf](). I used the [scikit-learn]() . For simplicity I consider title and blurb together so that each campaign
+is characterized only by one text, then we can use tf-idf to assign a weight to all the words in the collection.
+Now each text is represented by a vector, its values .  
+How can we look for words that are more relevant in funded projects versus failed ones? 
+One simple thing to do is to divide the collection in two sets, either successful or not, and then compute the average tf-idf representation of the texts in the two sets.
+Now take one word and look at its scores in the averages. If it's not correlated with success or failure it will likely have a similar score
+in both vectors, on the other hand a word appearing only in one of the two sets will have different values.
+An easy way to assign one score only is to take the difference between the two. Positive score will be correlated with success and viceversa.
+Now visualization is easy. I choose the top 10 positive and negative terms in each category and stack them obtaining the following.
+
 
 <figure>
     <img src="/assets/images/kickstarter/tfidf.png">
     <figcaption>Caption describing these two images.</figcaption>
 </figure>
 
-
-
+The examples are just for two categories. So what can we conclude? People don't like to fund tv and animation,
+using "film" is better than "movie" and sequels are not that bad. Food trucks aren't cool anymore, while beer love will never fade.
 
 ## Predicting success
 
 Back to the opening question, can we predict the success of a campaign?
-Encouraged by the tf-idf results I wanted probe the power of title and blurb words. 
+Encouraged by the tf-idf results I wanted probe the power of words in the title and blurb. 
 Indeed tf-idf already provides us with a vector representation of each campaign ..., which can 
 be readily used to train a Boosted Decision Tree. In this case I used the [XGBoost](http://xgboost.readthedocs.io/en/latest/) ....
 I wanted to compare the perfomance of it with other features extracted from the data, for instance:
