@@ -3,6 +3,7 @@ title: Predicting success on Kickstarter
 categories:
   - Kickstarter
   - Crowdfunding
+  - Classification
 #tags:
 #  - 
 #  - bikes
@@ -58,7 +59,7 @@ Finally we can take a look at spacial data. Different states have different pref
 <iframe width="720" height="580" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~roundedup/3.embed?width=640&height=480"></iframe>
 
 This map is very helpful in visualizing data, bear in mind that certain states might have very few campaigns in certain categories and
-thus big error bars should be associated with their success percentage. However results are reliable for bigger states...
+thus big error bars should be associated with their success percentage. However results are reliable for states like California, New York and other densely populated ones.
 
 ## Choose your words carefully
 
