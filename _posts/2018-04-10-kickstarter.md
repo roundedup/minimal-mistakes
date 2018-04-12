@@ -1,17 +1,17 @@
 ---
-title: Kick
+title: Predicting success on Kickstarter
 categories:
   - Kickstarter
-  - 
+  - Crowdfunding
 #tags:
-#  - nyc
+#  - 
 #  - bikes
 #  - citibikes
 #  - taxi
 ---
 
 
-Can the success of a crowdfunding campaign be predicted? 
+Can the success of crowdfunding campaigns be predicted? 
 Is it easier to fund a "film" or a "movie"? And in which state? 
 We will find out a few fascinating correlations.
 
@@ -62,9 +62,10 @@ thus big error bars should be associated with their success percentage. However 
 ## Choose your words carefully
 
 Let us turn our attention to the title and short description, a sort of pitch, of each campaign. 
-  we can use [tf-idf](). I used the [scikit-learn]() . For simplicity I consider title and blurb together so that each campaign
-is characterized only by one text, then we can use tf-idf to assign a weight to all the words in the collection.
-Now each text is represented by a vector, its values .  
+We can use term frequency–inverse document frequency [(tf-idf)](https://en.wikipedia.org/wiki/Tf-idf), which should highlight how
+relevant a word is in set of documents. With this method we can turn each document in a vector of features corresponding to the weights of words
+present (or not) in it. I implement it using [scikit-learn](http://scikit-learn.org/stable/modules/feature_extraction.html#tfidf-term-weighting).
+For simplicity I consider title and blurb together so that each campaign is characterized only by one text.  
 How can we look for words that are more relevant in funded projects versus failed ones? 
 One simple thing to do is to divide the collection in two sets, either successful or not, and then compute the average tf-idf representation of the texts in the two sets.
 Now take one word and look at its scores in the averages. If it's not correlated with success or failure it will likely have a similar score
@@ -85,12 +86,13 @@ using "film" is better than "movie" and sequels are not that bad. Food trucks ar
 
 Back to the opening question, can we predict the success of a campaign?
 Encouraged by the tf-idf results I wanted probe the power of words in the title and blurb. 
-Indeed tf-idf already provides us with a vector representation of each campaign ..., which can 
-be readily used to train a Boosted Decision Tree. In this case I used the [XGBoost](http://xgboost.readthedocs.io/en/latest/) ....
-I wanted to compare the perfomance of it with other features extracted from the data, for instance:
+Indeed tf-idf already gives us a vector representation of each campaign. These features can be readily used for regression or classification.   
+The latter is what we are looking for. To predict whether a campaign will be funded or not we will train a Boosted Decision Tree, 
+in this case using the [XGBoost](http://xgboost.readthedocs.io/en/latest/) package.
+I wanted to compare the perfomance of tf-idf with other features, for instance:
 goal, length of campaign and start day (in the year), number of characters in title and blurb, subcategory, US state, and so on.
 I trained using k-fold validation (with 6 folds) category by category, after optimizing the hyperparameters with a grid search.
-As an input I trained separately on the tf-idf and on the features, and on both together.
+Training was performed separately on the tf-idf and on the other features, and on both together.
 The results in term of [f-1 score](https://en.wikipedia.org/wiki/F1_score) are reported in the table below.
 
 In most categories language is as powerful as the other features. Their combination improves the overall score by a few percents.
