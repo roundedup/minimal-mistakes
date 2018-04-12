@@ -47,7 +47,8 @@ in that category.
 <figure class="half">
     <img width="160" src="/assets/images/kickstarter/cat_donut.png">
     <img width="160" src="/assets/images/kickstarter/funded_ratio.png">
-    <figcaption>Caption describing these two images.</figcaption>
+    <figcaption> Left: donut chart representing amount of campaign categories in the dataset. 
+    Right: chart showing the ratio of success in each category.</figcaption>
 </figure>
 
 
@@ -76,7 +77,7 @@ Now visualization is easy. I choose the top 10 positive and negative terms in ea
 
 <figure>
     <img src="/assets/images/kickstarter/tfidf.png">
-    <figcaption>Caption describing these two images.</figcaption>
+    <figcaption> Top 10 relevant words for successful campaigns versus top 10 for unfunded ones, in two different categories.</figcaption>
 </figure>
 
 The examples are just for two categories. So what can we conclude? People don't like to fund tv and animation,
