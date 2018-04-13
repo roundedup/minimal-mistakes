@@ -19,10 +19,10 @@ We will find out a few fascinating correlations.
 
 ## Data overview
 
-Kickstarter is a crowdfunding campaigns website. Anybody can try to fund their project, you just need
+[Kickstarter](https://www.kickstarter.com/) is a crowdfunding platform. Anybody can try to fund its campaign, you just need
 to give it a title and assign it a category (and sub category), write a short description (blurb) and a longer one, set a monetary goal.
 A location is also associated with it, and there is a deadline usually set within one or two months from the start of the campaign.
-There are other details (intermediate, ) but we will neglect them.
+There are other details but we will neglect them.
 
 That's all we know, is it enough to predict its success?
 To answer this question I used the dataset made available [here](https://webrobots.io/kickstarter-datasets/) by Web Robots. 
