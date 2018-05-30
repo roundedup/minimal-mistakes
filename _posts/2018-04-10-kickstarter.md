@@ -81,7 +81,8 @@ Now visualization is easy. I choose the top 10 positive and negative terms in ea
     <figcaption> Top 10 relevant words for successful campaigns versus top 10 for unfunded ones, in two different categories.</figcaption>
 </figure>
 
-The examples are just for two categories. So what can we conclude? People don't like to fund tv and animation,
+The examples are just for two categories. The results are meaningful as the words with relevant scores usually appear in hundreds of campaigns. 
+So what can we conclude? People don't like to fund tv and animation,
 using "film" is better than "movie" and sequels are not that bad. Food trucks aren't cool anymore, while beer love will never fade.
 
 ## Predicting success
